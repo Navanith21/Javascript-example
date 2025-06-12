@@ -10,11 +10,17 @@ function add(team, points) {
     document.getElementById('guestScore').innerText = guest;
   }
 }
-
-function reset() {
+function reset1(){
+  home=0
+  document.getElementById('homeScore').innerText=home;
+}
+function reset2(){
+  guest=0
+  document.getElementById('guestScore').innerText=guest;
+}
+function resetfull() {
   home = 0;
   guest = 0;
   document.getElementById('homeScore').innerText = home;
   document.getElementById('guestScore').innerText = guest;
 }
-
