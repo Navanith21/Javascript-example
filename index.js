@@ -1,17 +1,20 @@
-function increment1(){
-    team1Score += 1
-    console.log(increment1)
-}
-function increment2(){
-    team1Score += 2
-    console.log(increment2)
-}
-function increment3(){
-    team1Score += 3
-    console.log(increment3)
+let home = 0;
+let guest = 0;
+
+function add(team, points) {
+  if (team === 'home') {
+    home += points;
+    document.getElementById('homeScore').innerText = home;
+  } else {
+    guest += points;
+    document.getElementById('guestScore').innerText = guest;
+  }
 }
 
-function reset(){
-    team1Score =0
-    console.log(team1Score)
+function reset() {
+  home = 0;
+  guest = 0;
+  document.getElementById('homeScore').innerText = home;
+  document.getElementById('guestScore').innerText = guest;
 }
+
